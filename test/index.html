@@ -1,40 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Жукова Софья</title>
+    <title>Жукова Софья - Тест по географии</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Тест по информатике</h1>
-    <table border="1" id="q1">
-        <tr>
-            <td rowspan="3">1</td>
-            <td colspan="4" class="task">
-                Автоматическое устройство осуществило перекодировку информационного сообщения на русском языке,
-                первоначально записанного в 16-битном коде Unicode, в 8-битную кодировку КОИ-8. При этом информационное
-                сообщение уменьшилось на 480 бит. Какова длина сообщения в символах?
-            </td>
-        </tr>
-        <tr>
-            <td class="variant">1) 30</td>
-            <td class="variant">2) 60</td>
-            <td class="variant">3) 120</td>
-            <td class="variant">4) 480</td>
-        </tr>
-        <tr>
-            <td colspan="5">
-                <input id="a1" type="text" class="answer" placeholder="Ответ" />
-            </td>
-        </tr>
-    </table>
-    <button onclick="Check()">Проверить</button>
+    <div class="container">
+        <div class="header">
+            <h1>Тест по географии</h1>
+            
+        </div>
+        
+        <div class="content">
+            <div class="question-table" id="q1">
+                <table>
+                    <tr>
+                        <td class="question-number">1</td>
+                        <td colspan="4" class="task">
+                            Назовите столицу Вьетнама
+                        </td>
+                    </tr>
+                    <tr class="variants-row">
+                        <td colspan="5">
+                            <div class="variant">1) Афины</div>
+                            <div class="variant">2) Ханой</div>
+                            <div class="variant">3) Хараре</div>
+                            <div class="variant">4) Каир</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <input id="a1" type="text" class="answer-input" placeholder="Ответ" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="question-table" id="q2">
+                <table>
+                    <tr>
+                        <td class="question-number">2</td>
+                        <td colspan="4" class="task">
+                            Столица Бельгии?
+                        </td>
+                    </tr>
+                    <tr class="variants-row">
+                        <td colspan="5">
+                            <div class="variant">1) Брюссель</div>
+                            <div class="variant">2) Ла-Пас</div>
+                            <div class="variant">3) Будапешт</div>
+                            <div class="variant">4) Тбилиси</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <input id="a2" type="text" class="answer-input" placeholder="Ответ" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="question-table" id="q3">
+                <table>
+                    <tr>
+                        <td class="question-number">3</td>
+                        <td colspan="4" class="task">
+                            Столица Ирландии?
+                        </td>
+                    </tr>
+                    <tr class="variants-row">
+                        <td colspan="5">
+                            <div class="variant">1) Оттава</div>
+                            <div class="variant">2) Рига</div>
+                            <div class="variant">3) Дублин</div>
+                            <div class="variant">4) Лиссабон</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <input id="a3" type="text" class="answer-input" placeholder="Ответ" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
 
+            <div class="question-table" id="q4">
+                <table>
+                    <tr>
+                        <td class="question-number">4</td>
+                        <td colspan="4" class="task">
+                            А Кипра?
+                        </td>
+                    </tr>
+                    <tr class="variants-row">
+                        <td colspan="5">
+                            <div class="variant">1) Доха</div>
+                            <div class="variant">2) Буенос-Айрес</div>
+                            <div class="variant">3) Либревиль</div>
+                            <div class="variant">4) Никосия</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <input id="a4" type="text" class="answer-input" placeholder="Ответ" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="question-table" id="q5">
+                <table>
+                    <tr>
+                        <td class="question-number">5</td>
+                        <td colspan="4" class="task">
+                            Мадагаскар?
+                        </td>
+                    </tr>
+                    <tr class="variants-row">
+                        <td colspan="5">
+                            <div class="variant">1) Катманду</div>
+                            <div class="variant">2) Антананариву</div>
+                            <div class="variant">3) Гавана</div>
+                            <div class="variant">4) Яунде</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <input id="a5" type="text" class="answer-input" placeholder="Ответ" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="controls">
+                <button class="check-button" onclick="Check()">Проверить ответы</button>
+            </div>
+            
+            <div class="results">
+                <div class="score-display">
+                    Правильно: <span class="score-value" id="score">0</span> из 5
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Разработчик: Жукова Софья</p>
+        </div>
+    </div>
 
-    <p>Разработчики:
-        Иванов Иван, Петров Андрей
-    </p>
+    <script>
+        function Check() {
+            const correctAnswers = ['2', '1', '3', '4', '2'];
+            let score = 0;
 
-    
+            for (let i = 1; i <= 5; i++) {
+                const questionElement = document.getElementById('q' + i);
+                const answerInput = document.getElementById('a' + i);
+                const userAnswer = answerInput.value.trim();
+                const correctAnswer = correctAnswers[i - 1];
+
+                questionElement.classList.remove('correct', 'incorrect');
+
+                if (userAnswer === correctAnswer) {
+                    questionElement.classList.add('correct');
+                    score++;
+                } else {
+                    questionElement.classList.add('incorrect');
+                }
+            }
+
+            document.getElementById('score').textContent = score;
+        }
+    </script>
 </body>
 </html>
